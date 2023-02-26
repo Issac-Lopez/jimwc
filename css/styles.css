@@ -271,3 +271,27 @@ margin-right: 20px;
 /* FOOTER */
 /* MDN SCROLLER */
 /* MDN SCROLLER */
+***************************************/
+/* LEFT TEXT STYLER */
+.col1
+{
+
+  width: 450px;
+  right: 500px;
+  length: -450px;
+  float:left;
+  margin: 10px;
+  
+}
+
+
+.col2
+{
+  position: relative;
+  right: -520px;
+  width: 450px;
+  length: -450px;
+  float:center;
+  margin: 10px;
+  
+}
