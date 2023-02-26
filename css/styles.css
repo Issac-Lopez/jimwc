@@ -316,4 +316,25 @@ footer {
   
 }
 
+<<<<<<< HEAD
 
+=======
+/* arrow button */
+#scroll-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  font-size: 48px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #4E4F2F;
+  cursor: pointer;
+}
+
+#scroll-top-btn:hover {
+  color: #cccccc;
+}
+>>>>>>> d26e08f29b9dd9cd36a38ef39a8bf52c0d5e9c94
