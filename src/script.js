@@ -26,13 +26,14 @@ const questionMain = () => {
                   alt="question-2"
                 />
               </div>
+              <p class="instruct">To indent use <span>[SPACE BAR]</span></p>
               <form action="">
                 <div class="user-input">
                   <textarea
                     id="user-res"
                     class="user-response"
                     cols="390px"
-                    rows="8"
+                    rows="5"
                   ></textarea>
                 </div>
                 <br />
@@ -56,13 +57,12 @@ const questionMain = () => {
 // Question Function
 questionMain();
 
-let uResponseOne = document.querySelector(".user-response"); // users respon se
-
 // EVENTS
 // btn.addEventListener("click", isMatch);
 
 // Check For Matching User Input
 function isMatch(ans, i) {
+  let uResponseOne = document.querySelectorAll(".user-response")[i]; // users response
   console.log(ans);
   // console.log(uResponseOne.value.replaceAll(" ", ""));
   // console.log(questions_arr[1].answerTwo.replaceAll(" ", ""));

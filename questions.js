@@ -12,9 +12,9 @@ let questions = [
     quest: "NAVBAR",
   },
   {
-    id: 2,
-    src: "question-2.png",
-    answer: `<nav>Hi</nav>`,
-    quest: "NAVBAR",
+    id: 3,
+    src: "question-1.png",
+    answer: `<h1> Header </h1>`,
+    quest: "HEADER",
   },
 ];
