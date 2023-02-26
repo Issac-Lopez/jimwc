@@ -85,3 +85,22 @@ function isIncorrect(message) {
 function correct(message) {
   message.innerHTML = `<p id="level-complete">Level Completed <i class="fa-solid fa-circle-check message-icon"></i></p>`;
 }
+
+// arrow function
+const scrollTopBtn = document.getElementById("scroll-top-btn");
+
+// Show the button when the user scrolls down 20px from the top of the document
+window.onscroll = function () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+};
+
+// When the button is clicked, scroll to the top of the document
+scrollTopBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
