@@ -1,5 +1,3 @@
-const message = document.querySelector(".message");
-
 let mainQuestion = document.querySelector("#main-question");
 console.log(mainQuestion);
 
@@ -50,7 +48,7 @@ const questionMain = () => {
   btn.forEach((qBtn, index) => {
     qBtn.addEventListener("click", () => {
       let { answer } = questions_arr[index];
-      isMatch(answer.replaceAll(" ", ""), index);
+      isMatch(answer.replaceAll(" ", ""), index, mainQuestion);
     });
   });
 };
@@ -61,22 +59,29 @@ questionMain();
 // btn.addEventListener("click", isMatch);
 
 // Check For Matching User Input
-function isMatch(ans, i) {
+function isMatch(ans, i, mainQuestion) {
   let uResponseOne = document.querySelectorAll(".user-response")[i]; // users response
   console.log(ans);
   // console.log(uResponseOne.value.replaceAll(" ", ""));
   // console.log(questions_arr[1].answerTwo.replaceAll(" ", ""));
+
+  const message = document.querySelectorAll(".message");
+  console.log(message);
+
   if (uResponseOne.value.replaceAll(" ", "") == ans.replaceAll(" ", "")) {
     console.log("Match Found");
-    message.innerHTML = `<p id="level-complete">Level Completed <i class="fa-solid fa-circle-check message-icon"></i></p>`;
+    correct(message[i]);
   } else if (
     uResponseOne.value === null ||
     uResponseOne.value.replaceAll(" ", "") != ans.replaceAll(" ", "")
   ) {
-    isIncorrect();
+    isIncorrect(message[i]);
   }
 }
 
-function isIncorrect() {
+function isIncorrect(message) {
   message.innerHTML = `<p id="incorrect-msg">Incorrect! <br> Please try again</p>`;
+}
+function correct(message) {
+  message.innerHTML = `<p id="level-complete">Level Completed <i class="fa-solid fa-circle-check message-icon"></i></p>`;
 }
