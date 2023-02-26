@@ -1,0 +1,90 @@
+/* G-FONT */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* G-FONT */
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* General Reset */
+
+/* Gloabl CSS */
+:root {
+  --primary-box-shadow: 0000001e;
+  --primary-outline-light: 0000001e;
+  --prinary-font: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--prinary-font);
+}
+
+/* NAVBAR */
+#nav {
+  background: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 5vh;
+  box-shadow: 5px 5px 10px #000;
+}
+.link-menu {
+  display: flex;
+  list-style: none;
+}
+.link-menu li a {
+  margin: 10px;
+  text-decoration: none;
+}
+/* NAVBAR */
+
+#hero-section {
+  height: 20vh;
+  background: purple;
+}
+/* APP SECTION ------- */
+#app-section {
+  height: 65vh;
+  position: relative;
+}
+#snippet {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* Position - centered */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 2rem;
+}
+#main-question h2 {
+  margin: 20px 0;
+}
+code {
+  outline: 1px solid #0000001e;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 5px 5px 10px var(--primary-box-shadow);
+  border-radius: 10px;
+  font-size: 20px;
+  color: #000000db;
+}
+/* APP SECTION ------- */
+/* FOOTER */
+footer {
+  background: green;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+/* FOOTER */
