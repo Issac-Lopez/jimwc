@@ -271,7 +271,7 @@ footer {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   padding: 20px;
   /*position: absolute;*/
   bottom: 0;
