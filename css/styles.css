@@ -16,10 +16,12 @@
 }
 body {
   font-family: var(--prinary-font);
-  background: #f1f1f1;
+  background: #F1F1F1;
 }
+
+/***************************************/
 /* NAVBAR */
-#nav {
+/* #nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,13 +35,60 @@ body {
 .link-menu li a {
   margin: 10px;
   text-decoration: none;
-}
-/* NAVBAR */
+} */
 
+h1 {
+    font-size: 24px;
+    color: #e11e11;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Set the width of the content area */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #4E4F2F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    display: block;
+    color: #c8c6d3;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #c8c6d3;
+    color: #333;
+}
+
+/***************************************/
+/* NAVBAR */
 /* APP SECTION ------- */
 #app-section {
   position: relative;
-  background: #f1f1f1;
+  background: #F1F1F1;
   max-width: 900px;
   margin: auto;
 }
@@ -103,7 +152,7 @@ form {
 } */
 .user-response {
   box-shadow: var(--primary-box-shadow);
-  background: #ffffff;
+  background: #FFFFFF;
   border: none;
   border-radius: 10px;
   padding: 10px;
@@ -183,11 +232,11 @@ input {
   border: none;
   outline: none;
 }
-
 /* APP SECTION ------- */
 
+/***************************************/
 /* FOOTER */
-footer {
+/* footer {
   background: green;
   height: 10vh;
   display: flex;
@@ -195,9 +244,30 @@ footer {
   text-align: center;
   justify-content: center;
   gap: 1rem;
+} */
+
+footer {
+background-color: #333;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+/*position: absolute;*/
+bottom: 0;
+width: 100%;
 }
+
+.footer-links {
+display: flex;
+}
+
+.footer-links a {
+color: #fff;
+text-decoration: none;
+margin-right: 20px;
+}
+/***************************************/
 /* FOOTER */
-
 /* MDN SCROLLER */
-
 /* MDN SCROLLER */
