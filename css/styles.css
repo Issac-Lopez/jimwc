@@ -16,7 +16,7 @@
 }
 body {
   font-family: var(--prinary-font);
-  background: #F1F1F1;
+  background: #f1f1f1;
 }
 
 /***************************************/
@@ -38,49 +38,52 @@ body {
 } */
 
 h1 {
-    font-size: 24px;
-    color: #e11e11;
-    text-align: center;
-    margin-top: 50px;
+  font-size: 24px;
+  color: #e11e11;
+  text-align: center;
+  margin-top: 50px;
 }
 
 /* Set the width of the content area */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Navigation styles */
 nav {
-    background-color: #4E4F2F;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  background-color: #4e4f2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 nav a {
-    display: block;
-    color: #c8c6d3;
-    text-decoration: none;
-    padding: 10px 20px;
+  display: block;
+  color: #c8c6d3;
+  text-decoration: none;
+  padding: 10px 20px;
+
+  /* ADDED Transitions */
+  transition: all 0.25s ease-in-out;
 }
 
 nav a:hover {
-    background-color: #c8c6d3;
-    color: #333;
+  background-color: #c8c6d3;
+  color: #333;
 }
 
 /***************************************/
@@ -88,7 +91,7 @@ nav a:hover {
 /* APP SECTION ------- */
 #app-section {
   position: relative;
-  background: #F1F1F1;
+  background: #f1f1f1;
   max-width: 900px;
   margin: auto;
 }
@@ -116,8 +119,22 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
+
+textarea {
+  background-color: #4e4f2fc3 !important;
+  color: #fff;
+  font-size: 1.6rem !important;
+
+  box-shadow: inset 5px 5px 2px #00000048 !important;
+}
 textarea:focus {
   outline: none;
+}
+.instruct {
+  text-align: center;
+}
+.instruct span {
+  font-weight: bold;
 }
 .question-img-1 {
   width: 90%;
@@ -136,7 +153,7 @@ textarea:focus {
   margin-top: 20px;
 }
 .questionOne span {
-  color: red;
+  color: #7c7e3e;
 }
 form {
   text-align: center;
@@ -152,10 +169,11 @@ form {
 } */
 .user-response {
   box-shadow: var(--primary-box-shadow);
-  background: #FFFFFF;
+  background: #ffffff;
   border: none;
   border-radius: 10px;
   padding: 10px;
+  font-size: 1rem;
 }
 #btn-check {
   border: none;
@@ -215,10 +233,12 @@ code {
 }
 #incorrect-msg {
   color: red;
+  text-align: center;
   font-weight: bold;
   outline: 1px solid red;
   padding: 10px;
   border-radius: 10px;
+  box-shadow: var(--primary-box-shadow);
 }
 #level-complete {
   outline: 1px solid #000;
@@ -247,25 +267,25 @@ input {
 } */
 
 footer {
-background-color: #333;
-color: #fff;
-display: flex;
-justify-content: space-between;
-align-content: center;
-padding: 20px;
-/*position: absolute;*/
-bottom: 0;
-width: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /*position: absolute;*/
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-links {
-display: flex;
+  display: flex;
 }
 
 .footer-links a {
-color: #fff;
-text-decoration: none;
-margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
 }
 /***************************************/
 /* FOOTER */
