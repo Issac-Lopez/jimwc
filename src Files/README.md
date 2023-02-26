@@ -1,2 +1,0 @@
-# jimwc
-Code-A-Thon 
