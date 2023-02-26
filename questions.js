@@ -11,4 +11,10 @@ let questions = [
     answer: `<nav><h2> Header </h2><ul><li><a href="./index.html"> Projects </a></li><li><a href="./index.html"> About </a></li><li><a href="./index.html"> Contact </a></li></ul></nav>`,
     quest: "NAVBAR",
   },
+  {
+    id: 2,
+    src: "question-2.png",
+    answer: `<nav>Hi</nav>`,
+    quest: "NAVBAR",
+  },
 ];
